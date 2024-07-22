@@ -1,0 +1,23 @@
+# Example alert code script in Python
+
+# Function to handle different types of alerts based on alert codes
+def handle_alert(alert_code):
+    if alert_code == 1001:
+        print("Handling Alert Code 1001: Critical error in database connection")
+        # Add logic here to send notification, log the alert, or take corrective action
+    elif alert_code == 2001:
+        print("Handling Alert Code 2001: High CPU usage threshold exceeded")
+        # Add logic here to send notification, log the alert, or take corrective action
+    elif alert_code == 3001:
+        print("Handling Alert Code 3001: Security breach attempt detected")
+        # Add logic here to send notification, log the alert, or take corrective action
+    else:
+        print(f"Unknown alert code {alert_code}: Cannot handle this alert")
+
+# Example usage of the handle_alert function
+if __name__ == "__main__":
+    # Simulating receiving alert codes from a monitoring system
+    alert_codes = [1001, 2001, 3001, 4001]
+    
+    for alert_code in alert_codes:
+        handle_alert(alert_code)
